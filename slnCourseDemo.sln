@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjCourseDemo", "prjCourseDemo\prjCourseDemo.csproj", "{DCBE6400-A8B1-4237-B00E-D05453D1E1BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prjCourseDemo", "prjCourseDemo\prjCourseDemo.csproj", "{DCBE6400-A8B1-4237-B00E-D05453D1E1BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prjCourseDemoAdmin", "..\..\demo(admin)\slnCourseDemo\prjCourseDemo\prjCourseDemoAdmin.csproj", "{39345668-9028-4FDC-9688-3E7E53CE446A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DCBE6400-A8B1-4237-B00E-D05453D1E1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCBE6400-A8B1-4237-B00E-D05453D1E1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCBE6400-A8B1-4237-B00E-D05453D1E1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39345668-9028-4FDC-9688-3E7E53CE446A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39345668-9028-4FDC-9688-3E7E53CE446A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39345668-9028-4FDC-9688-3E7E53CE446A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39345668-9028-4FDC-9688-3E7E53CE446A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
