@@ -1,0 +1,108 @@
+﻿@model prjCourseDemo.Models.TCourseModle
+
+@{
+    ViewData["Title"] = "test";
+}
+
+<h1>test</h1>
+
+<h4>TCourseModle</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="test">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FCourseId" class="control-label"></label>
+                <input asp-for="FCourseId" class="form-control" />
+                <span asp-validation-for="FCourseId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FCategory" class="control-label"></label>
+                <input asp-for="FCategory" class="form-control" />
+                <span asp-validation-for="FCategory" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FName" class="control-label"></label>
+                <input asp-for="FName" class="form-control" />
+                <span asp-validation-for="FName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FTotalHours" class="control-label"></label>
+                <input asp-for="FTotalHours" class="form-control" />
+                <span asp-validation-for="FTotalHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FTotalNumber" class="control-label"></label>
+                <input asp-for="FTotalNumber" class="form-control" />
+                <span asp-validation-for="FTotalNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FGrade" class="control-label"></label>
+                <input asp-for="FGrade" class="form-control" />
+                <span asp-validation-for="FGrade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSchoolYear" class="control-label"></label>
+                <input asp-for="FSchoolYear" class="form-control" />
+                <span asp-validation-for="FSchoolYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSummary" class="control-label"></label>
+                <input asp-for="FSummary" class="form-control" />
+                <span asp-validation-for="FSummary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FModleSate" class="control-label"></label>
+                <input asp-for="FModleSate" class="form-control" />
+                <span asp-validation-for="FModleSate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FTeachingMaterial" class="control-label"></label>
+                <input asp-for="FTeachingMaterial" class="form-control" />
+                <span asp-validation-for="FTeachingMaterial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FOriginalPrice" class="control-label"></label>
+                <input asp-for="FOriginalPrice" class="form-control" />
+                <span asp-validation-for="FOriginalPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSpecialOffer" class="control-label"></label>
+                <input asp-for="FSpecialOffer" class="form-control" />
+                <span asp-validation-for="FSpecialOffer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FCreationUser" class="control-label"></label>
+                <input asp-for="FCreationUser" class="form-control" />
+                <span asp-validation-for="FCreationUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FCreationDate" class="control-label"></label>
+                <input asp-for="FCreationDate" class="form-control" />
+                <span asp-validation-for="FCreationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSaverUser" class="control-label"></label>
+                <input asp-for="FSaverUser" class="form-control" />
+                <span asp-validation-for="FSaverUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSaverDate" class="control-label"></label>
+                <input asp-for="FSaverDate" class="form-control" />
+                <span asp-validation-for="FSaverDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
