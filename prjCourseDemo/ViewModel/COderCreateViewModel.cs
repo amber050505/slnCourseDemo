@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace prjCourseDemo.ViewModel
 {
-    public class COderCreatViewModel
+    public class COderCreateViewModel
     {
         [DisplayName("付款人帳號")]
         public string UserName { get; set; }

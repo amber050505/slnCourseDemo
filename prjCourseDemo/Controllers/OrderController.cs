@@ -17,12 +17,12 @@ namespace prjCourseDemo.Controllers
         {
             _context = context;
         }
-        public IActionResult Creat()
+        public IActionResult Create()
         {
             List<CShoppingCart> List = getShoppingCart();
             //if (List == null || List.Count == 0)
             //    return RedirectToAction("", "");
-            COderCreatViewModel c = new COderCreatViewModel() { coursedata = new CShoppingCartViewModel() };
+            COderCreateViewModel c = new COderCreateViewModel() { coursedata = new CShoppingCartViewModel() };
             string UserId = "", UserName = "";
             DateTime now;
             readUserData(out UserId, out UserName, out now);
@@ -35,13 +35,14 @@ namespace prjCourseDemo.Controllers
             return View(c);
         }
 
+        //確認使用者帳號是否存在
         public IActionResult checkReceiverId(string account)
         {
             var buycourse_user = _context.StudentProfiles.Any(t => t.UserName.Equals(account) || t.Email.Equals(account));
             return Content(buycourse_user.ToString());//, "text/plain"
         }
 
-        //
+        //建立訂單詳情List 先預設使用者id為空字串
         [NonAction]
         public List<TOrderDetail> getOderDetail(int count)
         {
